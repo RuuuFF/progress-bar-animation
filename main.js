@@ -2,15 +2,19 @@ const progressBar = document.querySelector('#progress-bar')
 const section = document.querySelector('section')
 
 const animateProgressBar = () => {
-  let scrollDistance = -section.getBoundingClientRect().top
-  let progressWidth = (scrollDistance / (section.getBoundingClientRect().height - document.documentElement.clientHeight)) * 100
+  const { top: sectionTop, height: sectionHeight } = section.getBoundingClientRect()
+  const clientHeight = document.documentElement.clientHeight
 
-  let value = Math.floor(progressWidth)
+  // - invert numbers (positive to negative and negative to positive, same as i - (i * 2))
+  const scrollDistance = -sectionTop
+  const percentage = Math.round((scrollDistance / (sectionHeight - clientHeight)) * 100)
 
-  progressBar.style.width = value + '%'
-
-  if (value < 0) {
+  if (percentage < 0) {
     progressBar.style.width = '0%'
+  } else if (percentage > 100) {
+    progressBar.style.width = '100%'
+  } else {
+    progressBar.style.width = `${percentage}%`
   }
 }
 
