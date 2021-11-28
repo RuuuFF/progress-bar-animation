@@ -1,5 +1,5 @@
 # ⚙️ Projeto
-Exibe uma barra de progresso animada conforme o usuário da scroll em uma seção do conteúdo na página. O projeto foi desenvolvido durante o vídeo <a href="https://www.youtube.com/watch?v=mJ_SfLJKVs8">Javascript Progress Bar Animation Tutorial</a>, do canal <a href="https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q">Dev Ed</a> e possui algumas pequenas modificações feitas por mim.
+Exibe uma barra de progresso animada conforme o usuário da scroll em uma seção do conteúdo na página. O projeto foi desenvolvido durante o vídeo <a href="https://www.youtube.com/watch?v=mJ_SfLJKVs8">Javascript Progress Bar Animation Tutorial</a>, do canal <a href="https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q">Dev Ed</a> e possui algumas pequenas modificações (rafatoração) feitas por mim.
 
 # ✈️ Tecnologias
 - HTML
